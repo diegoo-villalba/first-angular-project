@@ -1,0 +1,48 @@
+<h1>{{mensajeBienvenida}}</h1>
+<div class="app-container">
+  <div class="buttons-section">
+    <h2>Contador de numeros</h2>
+    <h2>
+      {{numero}}
+    </h2>
+    <button (click)="incrementar()">Inrementar</button>
+    <button (click)="reducir()">Reducir</button>
+    <button (click)="reestablecer()">Reestablecer</button>
+  </div>
+  <div class="input-section">
+    <h2>Saludador</h2>
+    <input type="text" placeholder="Ingresa tu nombre acá crá" [(ngModel)]="nombre">
+    <p *ngIf="nombre">Hola {{nombre}}</p> <!-- El ngIf me sirve para mostrar el texto solo si hay un nombre o texto en el input-->
+  </div>
+</div>
+
+<div class="products-section">
+  <h2>Lista de Productos</h2>
+  <ul class="products-list">
+    <li *ngFor="let producto of productos, let i = index">
+      <div class="product-info">
+        <span class="product-name">{{producto.nombre}}</span>
+        <span class="product-price">{{producto.precio}}</span>
+      </div>
+      <button class="delete-btn" (click)="eliminarProducto(i)">Eliminar</button>
+    </li>
+  </ul>
+  <div class="add-product-form">
+    <input type="text" class="product-input" placeholder="Inserte el nombre del producto" [(ngModel)]="nombreProducto">
+    <input type="number" class="product-input" placeholder="" [(ngModel)]="precioProducto">
+    <button class="add-btn" (click)="agregarProducto()">Agregar Producto</button>
+  </div>
+</div>
+
+<div class="botoneras" [class.visible]="botonerasVisibles">
+  <div class="aviso-section">
+    <button class="aviso-btn" (click)="mostrarAviso()">{{aviso}}</button>
+    <div class="alerta-container" *ngIf="alerta">
+      <p class="alerta-texto">Aparezco yo papa</p>
+    </div>
+  </div>
+  <div class="cambio-color-section">
+    <button class="cambio-color-btn" (click)="cambiarColor()">{{ textoColor }}</button>
+    <p class="alerta-texto" [ngStyle]="{'color': cambiaColor ? '#4ecdc4' : '#ff6b6b'}">Mirá como cambio de color</p>
+  </div>
+</div>
