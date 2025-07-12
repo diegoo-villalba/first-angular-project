@@ -31,8 +31,8 @@ Este proyecto fue desarrollado como parte de una capacitación personal para apr
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/mi-primera-app-angular.git
-   cd mi-primera-app-angular
+   git clone https://github.com/diegoo-villalba/first-angular-project.git
+   cd first-angular-project
 
 2. Instalar las dependencias
 
