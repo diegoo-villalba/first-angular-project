@@ -19,7 +19,7 @@ Este proyecto fue desarrollado como parte de una capacitación personal para apr
 
 ## Tecnologías utilizadas
 
-- Angular (versión 16 o superior)
+- Angular
 - TypeScript
 - HTML y CSS
 - Angular CLI
