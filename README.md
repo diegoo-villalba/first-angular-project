@@ -67,3 +67,5 @@ src/
 ## Autor
 Diego A Villalba
 Proyecto de práctica en Angular.
+
+## Estructura general del proye

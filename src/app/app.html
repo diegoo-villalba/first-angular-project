@@ -18,19 +18,18 @@
 
 <div class="products-section">
   <h2>Lista de Productos</h2>
-  <ul class="products-list">
-    <li *ngFor="let producto of productos, let i = index">
-      <div class="product-info">
-        <span class="product-name">{{producto.nombre}}</span>
-        <span class="product-price">{{producto.precio}}</span>
-      </div>
-      <button class="delete-btn" (click)="eliminarProducto(i)">Eliminar</button>
-    </li>
-  </ul>
+    <ul class="products-list">
+      <app-producto-card
+        *ngFor="let p of productos; let i = index"
+        [producto]="p"
+        [indice]="i"
+        (eliminar)="eliminarProducto($event)">
+      </app-producto-card>
+    </ul>
   <div class="add-product-form">
     <input type="text" class="product-input" placeholder="Inserte el nombre del producto" [(ngModel)]="nombreProducto">
     <input type="number" class="product-input" placeholder="" [(ngModel)]="precioProducto">
-    <button class="add-btn" (click)="agregarProducto()">Agregar Producto</button>
+    <button class="add-btn" (click)="agregarProducto(nombreProducto,precioProducto)">Agregar Producto</button>
   </div>
 </div>
 
