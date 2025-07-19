@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Producto } from './model/producto';
+import { delay, Observable, of } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ProductoService {
   productos: Producto [] = [
@@ -17,10 +18,8 @@ export class ProductoService {
     }
   ];
 
-
-
-  getProductos(): Producto[] {
-    return this.productos;
+  getProductos(): Observable<Producto[]>  {
+    return of(this.productos).pipe(delay(2000));
   }
 
   eliminarProducto(indice: number): void {
