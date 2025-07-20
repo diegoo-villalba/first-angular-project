@@ -1,10 +1,9 @@
-import { Component, signal, NgModule, OnInit, OnDestroy } from '@angular/core';
+import { Component, signal, OnInit, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 import { ProductoCard } from '../producto-card/producto-card';
 import { Producto } from '../model/producto';
-import { ProductoService } from '../producto-service';
+import { ProductoService } from '../producto-service/producto-service';
 
 
 @Component({

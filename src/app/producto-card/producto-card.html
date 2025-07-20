@@ -1,4 +1,4 @@
 <div class="producto-card">
-    <p><strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}</p>
+    <p><strong>{{ producto.nombre }}</strong> - <span [class.precio-alto]="esPrecioAlto()">${{ producto.precio }}</span></p>
     <button (click)="eliminarProducto()">Eliminar</button>
 </div>

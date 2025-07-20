@@ -16,4 +16,9 @@ export class ProductoCard {
 eliminarProducto() {
   this.eliminar.emit(this.indice);
 }
+
+// Método para determinar si el precio es alto
+esPrecioAlto(): boolean {
+  return this.producto.precio > 500;
+}
 }

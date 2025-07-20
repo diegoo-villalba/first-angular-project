@@ -111,42 +111,54 @@ h1 {
   }
   
   /* Estilos para el div del input (derecha) */
-  .input-section {
-    flex: 1;
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  .input-section input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 2px solid #dee2e6;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    transition: border-color 0.3s ease;
-  
-  }
-  
-  .input-section input:focus {
-    outline: none;
-    border-color: #007bff;
-    box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
-  }
-  
-  .input-section p {
-    color: #27ae60;
-    font-weight: 600;
-    margin: 0;
-    font-size: 1.2rem;
-    text-align: center;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(135deg, #d5f4e6, #abebc6);
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
-  }
+.input-section {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-section input {
+  width: 80%;
+  max-width: 300px;
+  padding: 0.75rem;
+  border: 2px solid #dee2e6;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.3s ease;
+  text-align: center;
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.1);
+}
+
+.input-section p {
+  color: #27ae60;
+  font-weight: 600;
+  margin: 0;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #d5f4e6, #abebc6);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(39, 174, 96, 0.2);
+  width: 80%;
+  max-width: 300px;
+}
   
   /* Estilos para la sección de productos */
   .products-section {
