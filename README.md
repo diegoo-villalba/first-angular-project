@@ -1,4 +1,4 @@
-# 🛍️ Aplicación de Productos con Angular
+# 🛍️ Aplicación de práctica de Productos con Angular
 
 Una aplicación web moderna desarrollada con Angular que permite gestionar un catálogo de productos con funcionalidades completas de CRUD (Crear, Leer, Actualizar, Eliminar).
 
@@ -19,7 +19,7 @@ Una aplicación web moderna desarrollada con Angular que permite gestionar un ca
 - **Diseño Responsive**: Adaptable a diferentes tamaños de pantalla
 
 ### 🛣️ Sistema de Rutas
-- **Ruta Principal** (`/`): Página de inicio con todas las funcionalidades
+- **Ruta Principal** (`/`): Página de inicio (redirige a productos por el momento)
 - **Ruta Productos** (`/productos`): Vista específica de productos
 - **Ruta Acerca** (`/acerca`): Información sobre la aplicación
 
@@ -146,16 +146,6 @@ interface Producto {
 - **Estados de Carga**: Indicadores claros durante operaciones
 - **Accesibilidad**: Estructura semántica y contraste adecuado
 
-## 🧪 Testing
-
-El proyecto incluye archivos de configuración para testing:
-- **Jasmine**: Framework de testing
-- **Karma**: Test runner
-- **Archivos .spec.ts**: Tests unitarios para cada componente
-
-Para ejecutar los tests:
-```bash
-ng test
 ```
 
 ## 📦 Scripts Disponibles
@@ -169,12 +159,6 @@ ng serve --open            # Abrir automáticamente en el navegador
 ng build                   # Construir para producción
 ng build --watch           # Construir en modo watch
 
-# Testing
-ng test                    # Ejecutar tests unitarios
-ng test --watch            # Tests en modo watch
-
-# Linting
-ng lint                    # Verificar código con ESLint
 ```
 
 ## 🤝 Contribución
@@ -196,5 +180,3 @@ Este proyecto es de uso educativo y personal.
 - Desarrollado como parte de capacitación personal
 
 ---
-
-⭐ Si te gusta este proyecto, ¡dale una estrella al repositorio!
